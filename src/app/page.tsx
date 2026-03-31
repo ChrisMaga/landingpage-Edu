@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Specials from "@/components/Special";
 import Footer from "@/components/Footer";
 import ChooseMe from "@/components/ChooseMe";
+import Local from "@/components/Local";
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
           <section id="diferenciais" className="py-20 bg-primary text-white">...</section>
           <ChooseMe />
           <section id="contato" className="py-20 bg-primary"> {/* CTA esquerdo + form direito */}...</section>
-          <section id="localizacao" className="py-20"> {/* Endereço + mapa */}...</section>
+          <Local />
           <Footer />
 
         </div>
