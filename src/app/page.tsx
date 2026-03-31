@@ -8,7 +8,7 @@ import Local from "@/components/Local";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-16 md:pt-20">
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* Conteúdo expande */}
 

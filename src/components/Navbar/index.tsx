@@ -27,7 +27,7 @@ export default function Navbar(): ReactNode {
   return (
     <nav 
       ref={navRef}
-      className="sticky top-0 z-40 bg-primary text-white px-6 md:px-10 py-4 shadow-lg border-b-4 border-tertiary flex items-center justify-between font-poppins"
+      className="fixed top-0 left-0 w-full z-50 bg-primary text-white px-6 md:px-10 py-4 shadow-lg border-b-4 border-tertiary flex items-center justify-between font-poppins"
     >
       {/* Logo */}
       <Logotipo />
