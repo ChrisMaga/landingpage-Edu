@@ -14,10 +14,12 @@ export default function Navbar(): ReactNode {
   const pathname = usePathname();
 
   const links = [
-    { href: '/', label: 'Home' },
+    { href: '#hero', label: 'Home' },
     { href: '#specials', label: 'Especialidades' },
-    { href: '/diferenciais', label: 'Diferenciais' },
-    { href: '/contatos', label: 'Contatos' },
+    { href: '#differences', label: 'Diferenciais' },
+    { href: '#chooseme', label: 'Por que me escolher' },
+    { href: '#contato', label: 'Contatos' },
+    { href: '#local', label: 'Localização' },
   ];
 
   const toggleMenu = (): void => {
