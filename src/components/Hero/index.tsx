@@ -38,7 +38,9 @@ export default function Hero() {
         <div className="flex flex-col gap-3 md:gap-5 pt-2 sm:pt-1 md:pt-2 px-4 lg:px-3">
           {/* Botão 1: Ícone WhatsApp + Animação "pra frente e pra trás" (scale 1 → 1.05 → 1) */}
           <a
-            href="#contato"
+            href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-linear-to-r from-tertiary to-quaternary text-primary font-semibold uppercase text-xs sm:text-lg md:text-xs px-6 sm:px-7 py-3 md:py-4 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-3xl animate-breathe font-poppins tracking-wider whitespace-nowrap" // + whitespace-nowrap
           >
 
@@ -49,7 +51,7 @@ export default function Hero() {
           {/* Botão 2: Contato por formulário */}
 
           <a
-            href="#contato"
+            href="#contatos"
             className="flex items-center justify-center gap-3 text-quaternary hover:border-3 hover:border-quaternary hover:text-quaternary font-medium text-sm sm:text-lg md:text-sm x-6 sm:px-8 py-3 md:py-4 rounded-full transition-all duration-100 hover:shadow-lg font-poppins text-center"
           >
             <FaRegEnvelope className="w-5 h-5 shrink-0" />

@@ -17,8 +17,8 @@ export default function Navbar(): ReactNode {
     { href: '#hero', label: 'Home' },
     { href: '#specials', label: 'Especialidades' },
     { href: '#differences', label: 'Diferenciais' },
-    { href: '#chooseme', label: 'Por que me escolher' },
-    { href: '#contato', label: 'Contatos' },
+    { href: '#choose-me', label: 'Por que me escolher' },
+    { href: '#contatos', label: 'Contatos' },
     { href: '#local', label: 'Localização' },
   ];
 
@@ -52,7 +52,7 @@ export default function Navbar(): ReactNode {
       <div className="flex items-center space-x-4 shrink-0">
         {/* WhatsApp */}
         <a 
-          href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20conversar%20com%20um%20advogado!"
+          href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-accent hover:bg-[#25D366] text-quaternary font-semibold text-sm px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-poppins"
@@ -89,7 +89,7 @@ export default function Navbar(): ReactNode {
           {/* WhatsApp mobile */}
           <li>
             <a 
-              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20conversar%20com%20um%20advogado!"
+              href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
               className="block bg-accent hover:bg-[#25D366] text-quaternary font-semibold py-3 px-4 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-3 text-base"
               target="_blank" 
               rel="noopener noreferrer"

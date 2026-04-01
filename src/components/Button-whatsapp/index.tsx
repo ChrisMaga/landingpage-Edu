@@ -5,7 +5,7 @@ export default function ButtonWhastapp() {
 
         <div className='md:pt-5 flex flex-col gap-3 md:gap-5 pt-2 sm:pt-1 px-4 lg:px-3"'>
             <a
-                href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20conversar%20com%20um%20advogado!"
+                href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-linear-to-r from-accent to-accent/40 hover:bg-[#25D366] text-quaternary font-semibold hover:shadow-xl

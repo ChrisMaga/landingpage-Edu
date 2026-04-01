@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import ChooseMe from "@/components/ChooseMe";
 import Local from "@/components/Local";
 import Differences from "@/components/Differences";
+import Contatos from "@/components/Contact/Contatos";
+import ScrollToTop from "@/components/ScrollToTop";
 
 
 export default function Home() {
@@ -18,9 +20,10 @@ export default function Home() {
           <Specials />
           <Differences />
           <ChooseMe />
-          <section id="contato" className="py-20 bg-primary"> {/* CTA esquerdo + form direito */}...</section>
+          <Contatos />
           <Local />
           <Footer />
+          <ScrollToTop />
 
         </div>
     </main>
