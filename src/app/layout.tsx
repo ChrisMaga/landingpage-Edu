@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/Favicon.jpg",
+    icon: "/favicon.jpg",
   },
 };
 

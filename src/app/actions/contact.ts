@@ -21,9 +21,10 @@ export async function submitContact(
     return { success: false, error: 'Preencha nome, e-mail, telefone e mensagem.' };
   }
 
-  const gmailUser = process.env.GMAIL_USER;
-  const gmailAppPassword = process.env.GMAIL_APP_PASSWORD;
-  const contactReceiver = process.env.CONTACT_RECEIVER_EMAIL || gmailUser;
+  const gmailUser = process.env.GMAIL_USER?.trim();
+  const gmailAppPassword = process.env.GMAIL_APP_PASSWORD?.replace(/\s/g, "");
+  const contactReceiver =
+    process.env.CONTACT_RECEIVER_EMAIL?.trim() || gmailUser;
 
   if (!gmailUser || !gmailAppPassword || !contactReceiver) {
     return {
@@ -63,7 +64,16 @@ ${message}`,
     });
 
     return { success: true, message: 'Mensagem enviada com sucesso! Entrarei em contato o mais breve possível.' };
-  } catch {
-    return { success: false, error: 'Não foi possível enviar. Tente novamente.' };
+  } catch (err) {
+    console.error("[submitContact]", err);
+    const isDev = process.env.NODE_ENV === "development";
+    const detail =
+      err instanceof Error ? err.message : "Erro desconhecido ao enviar e-mail.";
+    return {
+      success: false,
+      error: isDev
+        ? `Falha no envio: ${detail}`
+        : "Não foi possível enviar. Verifique as credenciais do servidor ou tente novamente.",
+    };
   }
 }
