@@ -13,7 +13,7 @@ export default function ButtonWhastapp() {
                 title="Conversar com Advogado"
             >
                 <FaWhatsapp className="w-5 h-5 shrink-0" />
-                <span className="sm:inline uppercase">Quero conversar com Advogado</span>
+                <span className="sm:inline uppercase">Conversar com Eduardo</span>
             </a>
         </div>
     )

@@ -45,7 +45,7 @@ export default function Hero() {
           >
 
             <FaWhatsapp className="w-5 h-5 shrink-0" />
-            CONVERSAR COM ADVOGADO ESPECIALISTA
+            CONVERSAR COM EDUARDO
           </a>
 
           {/* Botão 2: Contato por formulário */}

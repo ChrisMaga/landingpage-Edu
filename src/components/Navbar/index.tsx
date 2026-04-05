@@ -56,10 +56,10 @@ export default function Navbar(): ReactNode {
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-accent hover:bg-[#25D366] text-quaternary font-semibold text-sm px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-poppins"
-          title="Conversar com Advogado"
+          title="Conversar com Eduardo"
         >
           <FaWhatsapp className="w-5 h-5" />
-          <span className="hidden sm:inline">Conversar com Advogado</span>
+          <span className="hidden sm:inline">Conversar com Eduardo</span>
         </a>
 
         {/* Hamburger */}
@@ -95,7 +95,7 @@ export default function Navbar(): ReactNode {
               rel="noopener noreferrer"
             >
               <FaWhatsapp className="w-6 h-6" />
-              Conversar com Advogado
+              Conversar com Eduardo
             </a>
           </li>
         </ul>

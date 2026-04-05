@@ -1,4 +1,3 @@
-import BackgroundLight from "../BackgroundLight";
 import { LuClock, LuFileCheck, LuMapPin } from "react-icons/lu";
 import { RiHeadphoneLine, RiGroupLine } from "react-icons/ri";
 
@@ -8,11 +7,11 @@ export default function ChooseMe() {
     const specials = [
         {
             icon: RiHeadphoneLine,
-            desc: "Nada linguagem difícil. Explico tudo de um jeito que você realmente entende o que está acontecendo no seu caso.",
+            desc: "Nada de linguagem difícil. Explico tudo de um jeito que você realmente entende o que está acontecendo no seu caso.",
         },
         {
             icon: LuClock,
-            desc: "Sei que você precisa de uma resposta rápida. Trabalho para que seu caso ande o mais rápido possível. ",
+            desc: "Sei que você precisa de uma resposta rápida. Trabalho para que seu caso ande o mais rápido possível.",
         },
         {
             icon: LuFileCheck,
@@ -30,7 +29,6 @@ export default function ChooseMe() {
 
     return (
         <section id="choose-me" className="min-h-[80vh] md:min-h-[60vh] bg-quaternary/10 relative overflow-hidden font-poppins pl-6 pr-6 md:px-10 lg:px-20 py-20">
-            <BackgroundLight />
 
             {/* Título, subtítulo (centralizado como Hero) */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mb-16 md:mb-20">

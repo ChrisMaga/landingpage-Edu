@@ -4,7 +4,7 @@ import { FaGavel } from "react-icons/fa";
 import { LuBriefcaseBusiness } from "react-icons/lu";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import ButtonForm from "../Button-form";
-import BackgroundLight from "../BackgroundLight";
+
 
 export default function Specials() {
     // Array para cards (ideal para reusabilidade e manutenção)
@@ -12,19 +12,19 @@ export default function Specials() {
         {
             icon: FaGavel,
             title: "Direito Civil",
-            desc: "Comprou e não recebeu? Foi cobrado indevidamente? Teve o nome negativado sem motivo? O plano de saúde negou seu tratamento, cirurgia ou exame?",
-            tags: ["Isenções de Tributos", "Contratos", "Indenizações", "Negativação", "Planos de Saúde", "Reajuste Abusivo", "Cobranças Indevidas"]
+            desc: "Atuação em questões do dia a dia que envolvem direitos e obrigações, como contratos, indenizações e responsabilidades. Cada situação é analisada com atenção aos detalhes, buscando orientar o cliente com clareza e encontrar caminhos seguros para resolver o problema.",
+            tags: ["Contratos", "Indenizações", "Responsabilidades", "Direitos Individuais"]
         },
         {
             icon: MdOutlineHealthAndSafety,
             title: "Previdência Social",
-            desc: "Teve o benefício negado pelo INSS? Quer se aposentar e não sabe como? Nós cuidamos de todo o processo para você receber o que merece.",
+            desc: "Orientação em benefícios previdenciários, como aposentadorias, pensões e auxílios. A análise é feita de forma cuidadosa, considerando o histórico de cada cliente para garantir que seus direitos sejam compreendidos e corretamente buscados.",
             tags: ["Aposentadorias", "BPC/LOAS", "Revisões", "Isenção de IR"]
         },
         {
             icon: LuBriefcaseBusiness,
             title: "Direito Trabalhista",
-            desc: "Foi demitido sem receber o que é seu? Trabalhou sem carteira assinada? Sofreu assédio no trabalho? Sofreu um acidente e não teve suporte da empresa? ",
+            desc: "Atuação em situações relacionadas ao trabalho, como rescisões, direitos não pagos e conflitos entre empregado e empregador. O foco é esclarecer a situação, orientar sobre os direitos envolvidos e conduzir o caso com responsabilidade, buscando evitar prejuízos.",
             tags: ["Demissões", "Horas Extras", "FGTS", "Vínculo empregatício", "Assédio Moral", "Rescisão Contratual"]
         }
     ];
@@ -32,19 +32,14 @@ export default function Specials() {
     return (
         <section id="specials" className="min-h-[80vh] md:min-h-[80vh] bg-quaternary/10 relative overflow-hidden font-poppins pl-6 pr-6 md:px-10 lg:px-20 py-20">
 
-            <BackgroundLight />
 
             {/* Título, subtítulo e texto principal (centralizado como Hero) */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mb-16 md:mb-20">
-                <p className="text-secondary uppercase font-semibold md:text-2xl tracking-wider">
-                    Especialidades
-                </p>
-                <h2 className="text-primary font-merriweather font-semibold text-3xl md:text-5xl leading-tight">
-                    Como posso te ajudar?
-                </h2>
                 <p className="text-secondary font-medium text-lg md:text-2xl px-4 leading-relaxed">
-                    Atuo nas áreas que mais afetam o dia a dia das pessoas. Entenda como posso resolver o seu problema.
+                    Cada caso exige mais do que conhecimento técnico, exige análise cuidadosa, experiência e uma condução segura em cada etapa.
                 </p>
+                <p>Além de um atendimento direto e responsável, avalio cada situação de forma individual para orientar com clareza, reduzir incertezas e conduzir o cliente com segurança ao longo de todo o processo.</p>
+            <p>Posso te ajudar nas áreas que mais afetam seu dia a dia:</p>
             </div>
 
             {/* Quadros de áreas do direito (grid responsivo) */}
