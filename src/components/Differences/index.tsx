@@ -28,19 +28,19 @@ export default function Differences() {
 
 
     return (
-        <section id="differences" className="py-16 bg-primary min-h-[80vh] md:min-h-[80vh] overflow-hidden font-poppins pl-6 pr-6 md:px-10 lg:px-20 text-quaternary relative">
+        <section id="differences" className="py-16 bg-primary min-h-[80vh] md:min-h-[80vh] overflow-hidden font-heading pl-6 pr-6 md:px-10 lg:px-20 text-quaternary relative">
 
             {/* Título, subtítulo e texto principal (centralizado como Hero) */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mb-16 md:mb-20">
-                <p className=" uppercase font-semibold md:text-2xl tracking-wider">
+                <p className=" uppercase font-medium md:text-2xl tracking-wider">
                     Diferenciais
                 </p>
-                <h2 className=" font-merriweather font-semibold text-3xl md:text-5xl leading-tight">
+                <h2 className=" font-heading font-bold text-3xl md:text-5xl leading-tight">
                     Por que confiar no meu serviço?
                 </h2>
 
-                <p className=" font-medium text-lg md:text-2xl px-4 leading-relaxed">
-                    Aqui você recebe um atendimento humanizado, especializado e focado na sua vitória.<span className=" font-bold text-lg md:text-2xl px-1 leading-relaxed">
+                <p className=" font-normal text-lg md:text-2xl px-4 leading-relaxed">
+                    Aqui você recebe um atendimento humanizado, especializado e focado na sua vitória.<span className=" font-semibold text-lg md:text-2xl px-1 leading-relaxed">
                         Meu compromisso é com sua tranquilidade e justiça.
                     </span>
                 </p>
@@ -56,10 +56,10 @@ export default function Differences() {
                     >
                         <differences.icon className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 text-quaternary shrink-0 mt-1" />
                         <div className="flex-1 min-w-0">
-                            <h3 className="mb-2 text-xl md:text-2xl lg:text-3xl font-semibold text-quaternary font-merriweather leading-tight">
+                            <h3 className="mb-2 text-xl md:text-2xl lg:text-3xl font-bold text-quaternary font-heading leading-tight">
                                 {differences.title}
                             </h3>
-                            <p className="font-roboto text-sm md:text-base lg:text-lg leading-relaxed lg:leading-loose">
+                            <p className="font-body text-sm md:text-base lg:text-lg leading-relaxed lg:leading-loose">
                                 {differences.desc}
                             </p>
                         </div>
@@ -70,7 +70,7 @@ export default function Differences() {
 
             {/* CTA */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mt-16 md:mt-20">
-                <p className="font-poppins text-1xl md:text-2xl leading-tight">
+                <p className="font-heading text-1xl md:text-2xl leading-tight">
                     Pronto para garantir seus direitos? Não enfrente esse desafio sozinho. Confie em quem já ajudou centenas de pessoas a conquistar seus direitos.
                 </p>
 

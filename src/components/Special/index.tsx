@@ -30,12 +30,12 @@ export default function Specials() {
     ];
 
     return (
-        <section id="specials" className="min-h-[80vh] md:min-h-[80vh] bg-quaternary/10 relative overflow-hidden font-poppins pl-6 pr-6 md:px-10 lg:px-20 py-20">
+        <section id="specials" className="min-h-[80vh] md:min-h-[80vh] bg-quaternary/10 relative overflow-hidden font-heading pl-6 pr-6 md:px-10 lg:px-20 py-20">
 
 
             {/* Título, subtítulo e texto principal (centralizado como Hero) */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mb-16 md:mb-20">
-                <p className="text-secondary font-medium text-lg md:text-2xl px-4 leading-relaxed">
+                <p className="text-secondary font-normal text-lg md:text-2xl px-4 leading-relaxed">
                     Cada caso exige mais do que conhecimento técnico, exige análise cuidadosa, experiência e uma condução segura em cada etapa.
                 </p>
                 <p>Além de um atendimento direto e responsável, avalio cada situação de forma individual para orientar com clareza, reduzir incertezas e conduzir o cliente com segurança ao longo de todo o processo.</p>
@@ -47,15 +47,15 @@ export default function Specials() {
                 {specials.map((special, index) => (
                     <div key={index} className="group bg-tertiary/20 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-secondary/30 shadow-xl flex flex-col items-center text-center gap-4 h-full">
                         <special.icon className="w-12 h-12 md:w-16 md:h-16 text-secondary group-hover:scale-110 transition-all duration-300" />
-                        <h3 className="text-xl md:text-2xl font-semibold text-primary font-merriweather">{special.title}</h3>
-                        <p className="text-secondary font-roboto text-sm md:text-base leading-relaxed">{special.desc}</p>
+                        <h3 className="text-xl md:text-2xl font-bold text-primary font-heading">{special.title}</h3>
+                        <p className="text-secondary font-body text-sm md:text-base leading-relaxed">{special.desc}</p>
 
                         {/* Tags dentro do card */}
                         <div className="flex flex-wrap gap-2 justify-center mt-2 pt-5 border-t border-secondary/20 w-full">
                             {special.tags.map((tag, tagIndex) => (
                                 <span
                                     key={tagIndex}
-                                    className="bg-secondary/10 text-primary px-3 py-1 rounded-full text-xs md:text-sm font-medium font-roboto tracking-wide shadow-sm"
+                                    className="bg-secondary/10 text-primary px-3 py-1 rounded-full text-xs md:text-sm font-normal font-body tracking-wide shadow-sm"
                                 >
                                     {tag}
                                 </span>
@@ -66,7 +66,7 @@ export default function Specials() {
             </div>
 
             {/* Texto final */}
-            <p className="text-secondary font-medium text-lg md:text-2xl px-4 leading-relaxed text-center mt-12 max-w-3xl mx-auto">
+            <p className="text-secondary font-normal text-lg md:text-2xl px-4 leading-relaxed text-center mt-12 max-w-3xl mx-auto">
                 Se identificou com algum desses problemas? Saiba que você tem direitos! Fale agora com um especialista.
             </p>
 

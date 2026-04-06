@@ -27,11 +27,11 @@ export default function Local() {
   return (
     <section
       id="local"
-      className="min-h-[60vh] md:min-h-[50vh] bg-quaternary/10 relative overflow-hidden font-poppins px-4 md:px-10 lg:px-20 py-16 md:py-20"
+      className="min-h-[60vh] md:min-h-[50vh] bg-quaternary/10 relative overflow-hidden font-heading px-4 md:px-10 lg:px-20 py-16 md:py-20"
     >
       {/* Título central */}
       <div className="flex justify-center mb-12 md:mb-20">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins text-primary uppercase tracking-wide">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-primary uppercase tracking-wide">
           LOCALIZAÇÃO
         </h1>
       </div>
@@ -49,17 +49,17 @@ export default function Local() {
                 <item.icon className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-primary text-sm md:text-base lg:text-lg uppercase tracking-wide mb-1">
+                <h3 className="font-bold font-heading text-primary text-sm md:text-base lg:text-lg uppercase tracking-wide mb-1">
                   {item.title}
                 </h3>
                 {Array.isArray(item.desc) ? (
-                  <ul className="text-secondary font-roboto text-sm md:text-base space-y-1 list-disc list-inside">
+                  <ul className="text-secondary font-body font-normal text-sm md:text-base space-y-1 list-disc list-inside">
                     {item.desc.map((phone, i) => (
                       <li key={i}>{phone}</li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-secondary font-roboto text-sm md:text-base leading-relaxed">
+                  <p className="text-secondary font-body font-normal text-sm md:text-base leading-relaxed">
                     {item.desc}
                   </p>
                 )}

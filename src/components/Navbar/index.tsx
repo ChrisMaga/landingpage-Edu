@@ -29,7 +29,7 @@ export default function Navbar(): ReactNode {
   return (
     <nav 
       ref={navRef}
-      className="fixed top-0 left-0 w-full z-50 bg-primary text-white px-6 md:px-10 py-4 shadow-lg border-b-4 border-tertiary flex items-center justify-between font-poppins"
+      className="fixed top-0 left-0 w-full z-50 bg-primary text-white px-6 md:px-10 py-4 shadow-lg border-b-4 border-tertiary flex items-center justify-between font-heading"
     >
       {/* Logo */}
       <Logotipo />
@@ -40,7 +40,7 @@ export default function Navbar(): ReactNode {
           <li key={link.href}>
             <Link 
               href={link.href} 
-              className="text-lg font-medium hover:text-quaternary transition-colors duration-300 py-2 px-3 rounded-md hover:bg-secondary/50"
+              className="text-lg font-semibold hover:text-quaternary transition-colors duration-300 py-2 px-3 rounded-md hover:bg-secondary/50"
             >
               {link.label}
             </Link>
@@ -55,7 +55,7 @@ export default function Navbar(): ReactNode {
           href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-accent hover:bg-[#25D366] text-quaternary font-semibold text-sm px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-poppins"
+          className="bg-accent hover:bg-[#25D366] text-quaternary font-semibold text-sm px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-heading"
           title="Conversar com Eduardo"
         >
           <FaWhatsapp className="w-5 h-5" />
@@ -80,7 +80,7 @@ export default function Navbar(): ReactNode {
             <li key={link.href}>
               <Link 
                 href={link.href}
-                className="block text-lg font-medium py-3 px-4 hover:text-quaternary hover:bg-secondary/50 rounded-lg transition-all duration-300"
+                className="block text-lg font-semibold py-3 px-4 hover:text-quaternary hover:bg-secondary/50 rounded-lg transition-all duration-300"
               >
                 {link.label}
               </Link>

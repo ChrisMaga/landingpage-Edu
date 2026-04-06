@@ -9,11 +9,11 @@ export default function Contatos() {
   const [state, formAction] = useActionState(submitContact, null);
 
   return (
-    <section id="contatos" className="py-20 md:py-28 bg-primary relative font-poppins">
+    <section id="contatos" className="py-20 md:py-28 bg-primary relative font-heading">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] gap-10 md:gap-16 lg:gap-24 xl:gap-28 items-start">
           <div className="lg:pt-8">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-merriweather text-quaternary leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-quaternary leading-tight mb-6">
               Não deixe para depois o que pode mudar sua vida hoje
             </h2>
             <p className="text-lg md:text-xl text-quaternary leading-relaxed max-w-1xl">
@@ -34,10 +34,10 @@ export default function Contatos() {
             className="w-full max-w-[680px] justify-self-end bg-white/80 border border-primary/10 shadow-xl rounded-2xl p-6 md:p-8 space-y-5"
           >
             <div>
-              <h3 className="text-2xl md:text-3xl font-merriweather font-bold text-primary mb-4">
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">
                 Solicite uma consulta gratuita
               </h3>
-              <label htmlFor="name" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
                 Nome Completo *
               </label>
               <input
@@ -51,7 +51,7 @@ export default function Contatos() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
                 E-mail *
               </label>
               <input
@@ -65,7 +65,7 @@ export default function Contatos() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
                 Telefone/WhatsApp *
               </label>
               <input
@@ -79,7 +79,7 @@ export default function Contatos() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
                 Mensagem *
               </label>
               <textarea

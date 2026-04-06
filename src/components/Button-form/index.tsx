@@ -6,7 +6,7 @@ import { FaRegEnvelope } from "react-icons/fa"
           
           <a 
             href="#contatos"
-            className="flex items-center justify-center gap-3 text-primary border pt-2 hover:border-primary hover:text-primary font-medium text-sm sm:text-lg px-6 sm:px-8 py-3 md:py-4 rounded-full transition-all duration-100 hover:shadow-lg font-poppins text-center"
+            className="flex items-center justify-center gap-3 bg-secondary text-quaternary border-2 border-secondary hover:bg-primary hover:border-quaternary font-semibold uppercase text-xs sm:text-lg md:text-xs px-6 sm:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl font-heading tracking-wider text-center whitespace-nowrap"
           >
             <FaRegEnvelope className="w-5 h-5 shrink-0" />
             AGENDAR UMA REUNIÃO

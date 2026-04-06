@@ -28,14 +28,14 @@ export default function ChooseMe() {
     ];
 
     return (
-        <section id="choose-me" className="min-h-[80vh] md:min-h-[60vh] bg-quaternary/10 relative overflow-hidden font-poppins pl-6 pr-6 md:px-10 lg:px-20 py-20">
+        <section id="choose-me" className="min-h-[80vh] md:min-h-[60vh] bg-quaternary/10 relative overflow-hidden font-heading pl-6 pr-6 md:px-10 lg:px-20 py-20">
 
             {/* Título, subtítulo (centralizado como Hero) */}
             <div className="relative z-20 flex flex-col justify-center items-center gap-4 text-center max-w-4xl mx-auto mb-16 md:mb-20">
-                <p className="text-secondary uppercase font-semibold md:text-2xl tracking-wider">
+                <p className="text-secondary uppercase font-medium md:text-2xl tracking-wider">
                     Porque me escolher?
                 </p>
-                <h2 className="text-primary font-merriweather font-semibold text-3xl md:text-5xl leading-tight">
+                <h2 className="text-primary font-heading font-bold text-3xl md:text-5xl leading-tight">
                     Advocacia de verdade, do seu lado
                 </h2>
             </div>
@@ -51,7 +51,7 @@ export default function ChooseMe() {
                             <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-secondary/10 rounded-full flex items-center justify-center p-3 shadow-lg">
                                 <special.icon className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 text-secondary shrink-0" />
                             </div>
-                            <p className="text-secondary font-roboto text-sm md:text-base leading-relaxed">{special.desc}</p>
+                            <p className="text-secondary font-body text-sm md:text-base leading-relaxed">{special.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -64,7 +64,7 @@ export default function ChooseMe() {
                             <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-secondary/10 rounded-full flex items-center justify-center p-3 shadow-lg">
                                 <special.icon className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 text-secondary shrink-0" />
                             </div>
-                            <p className="text-secondary font-roboto text-sm md:text-base leading-relaxed">{special.desc}</p>
+                            <p className="text-secondary font-body text-sm md:text-base leading-relaxed">{special.desc}</p>
                         </div>
                     ))}
                 </div>

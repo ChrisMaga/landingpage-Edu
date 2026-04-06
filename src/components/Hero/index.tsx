@@ -7,7 +7,7 @@ import { LuMapPin } from "react-icons/lu";
 export default function Hero() {
   return (
     <section id="hero" className="min-h-[80vh] md:min-h-[40vh] 
-    bg-linear-to-br from-primary via-secondary to-primary flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-20 pt-12 md:pt-4 md:pb-3 relative overflow-hidden font-poppins">
+    bg-linear-to-br from-primary via-secondary to-primary flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-20 pt-12 md:pt-4 md:pb-3 relative overflow-hidden font-heading">
 
       {/* Marca d'água: Logo central (aumentei opacidade e z-index) */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0"> {/* z-0 mais baixo */}
@@ -23,13 +23,13 @@ export default function Hero() {
 
       {/* Conteúdo texto (centralizado mobile, esquerdo desktop) */}
       <div className="relative z-20 w-full max-w-2xl text-center lg:text-center lg:pr-12 space-y-6 md:space-y-8 flex-1 order-1 lg:order-0 md:pb-8 md:pl-5 lg:pt-20">
-        <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-semibold font-merriweather text-white leading-tight md:mt-4">
+        <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold font-heading text-white leading-tight md:mt-4">
           Seus direitos merecem uma defesa que não recua.
         </h1>
-        <p className="text-lg font-roboto sm:text-xl md:text-xl text-quaternary leading-relaxed px-4 lg:px-0 ">
+        <p className="text-lg font-body sm:text-xl md:text-xl text-quaternary leading-relaxed px-4 lg:px-0 ">
           Serviço jurídico completo e personalizado, guiado pela ética, transparência e expertise, com soluções estratégicas para garantir seus direitos.
         </p>
-        <p className="flex items-center justify-center gap-2 text-base font-roboto sm:text-lg md:text-sm text-quaternary font-medium md:pb-1 md:mb-2 px-4 lg:px-0">
+        <p className="flex items-center justify-center gap-2 text-base font-body sm:text-lg md:text-sm text-quaternary font-normal md:pb-1 md:mb-2 px-4 lg:px-0">
           <LuMapPin className="w-5 h-5 shrink-0" />
           Atendimento presencial e online em todo estado de SP
         </p>
@@ -41,7 +41,7 @@ export default function Hero() {
             href="https://wa.me/5511998320101?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20o%20Dr.%20Eduardo%20Macedo."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-linear-to-r from-tertiary to-quaternary text-primary font-semibold uppercase text-xs sm:text-lg md:text-xs px-6 sm:px-7 py-3 md:py-4 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-3xl animate-breathe font-poppins tracking-wider whitespace-nowrap" // + whitespace-nowrap
+            className="flex items-center justify-center gap-2 bg-linear-to-r from-tertiary to-quaternary text-primary font-semibold uppercase text-xs sm:text-lg md:text-xs px-6 sm:px-7 py-3 md:py-4 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-3xl animate-breathe font-heading tracking-wider whitespace-nowrap" // + whitespace-nowrap
           >
 
             <FaWhatsapp className="w-5 h-5 shrink-0" />
@@ -52,7 +52,7 @@ export default function Hero() {
 
           <a
             href="#contatos"
-            className="flex items-center justify-center gap-3 text-quaternary hover:border-3 hover:border-quaternary hover:text-quaternary font-medium text-sm sm:text-lg md:text-sm x-6 sm:px-8 py-3 md:py-4 rounded-full transition-all duration-100 hover:shadow-lg font-poppins text-center"
+            className="flex items-center justify-center gap-3 bg-secondary text-quaternary border-2 border-secondary hover:bg-primary hover:border-quaternary font-semibold uppercase text-xs sm:text-lg md:text-xs px-6 sm:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl font-heading tracking-wider text-center whitespace-nowrap"
           >
             <FaRegEnvelope className="w-5 h-5 shrink-0" />
             AGENDAR UMA REUNIÃO
